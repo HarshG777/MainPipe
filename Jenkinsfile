@@ -15,7 +15,7 @@ pipeline{
       steps{
         bat '''
         set PATH = %PYTHON_PATH%;%PATH%
-        pip install -r requirements.txt
+        python -m pip install -r requirements.txt
         '''
       }
     }
