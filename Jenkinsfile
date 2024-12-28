@@ -14,7 +14,7 @@ pipeline{
     stage('Build'){
       steps{
         bat '''
-        set PATH = %PYTHON_PATH%;%PATH%
+        set PATH=%PYTHON_PATH%;%PATH%
         python -m pip install -r requirements.txt
         '''
       }
@@ -26,7 +26,7 @@ pipeline{
       }
       steps{
         bat '''
-        set PATH = %PYTHON_PATH%;%PATH%
+        set PATH=%PYTHON_PATH%;%PATH%
         sonar-scanner -Dsonar.projectKey=MainPipeline^
         -Dsonar.sources=.^
         -Dsonar.host.url=http://localhost:9000^
