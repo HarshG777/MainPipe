@@ -8,3 +8,6 @@ def fibonacci_iterative(n):
 # Example usage
 n = int(input("Enter the number of Fibonacci numbers you want: "))
 print("Fibonacci sequence:", fibonacci_iterative(n))
+
+name = 21
+value = 00
